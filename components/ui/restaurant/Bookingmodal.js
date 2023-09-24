@@ -5,7 +5,6 @@ import SecondaryBtn from '@/components/ui/buttons/SecondaryBtn';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faXmark } from '@fortawesome/free-solid-svg-icons';
 import NumberInput from '../numberInput/numberInput2';
-import Confirm from './confirm';
 
 export default function BookingModal({
   datas = [],

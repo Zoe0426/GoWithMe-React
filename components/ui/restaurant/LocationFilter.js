@@ -8,21 +8,21 @@ import { faPaw } from '@fortawesome/free-solid-svg-icons';
 export default function LocationFilter({
   text = '',
   totalItems = 0,
-  handleCityClick,
-  handleAreaClick,
+  // handleCityClick,
+  // handleAreaClick,
   data = [],
 }) {
-  // const [selectedCity, setSelectedCity] = useState(null);
-  // const [selectedArea, setSelectedArea] = useState(null);
+  const [selectedCity, setSelectedCity] = useState(null);
+  const [selectedArea, setSelectedArea] = useState(null);
 
-  // const handleCityClick = ({ key }) => {
-  //   setSelectedCity(key);
-  //   setSelectedArea(null);
-  // };
+  const handleCityClick = ({ key }) => {
+    setSelectedCity(key);
+    setSelectedArea(null);
+  };
 
-  // const handleAreaClick = ({ key }) => {
-  //   setSelectedArea(key);
-  // };
+  const handleAreaClick = ({ key }) => {
+    setSelectedArea(key);
+  };
   const cities = {
     臺北市: [
       '中正區',

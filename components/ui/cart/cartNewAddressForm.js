@@ -200,7 +200,6 @@ export default function CartNewAddressForm({
                         style={{
                           width: 120,
                         }}
-                        style={{ width: '100%' }}
                         onChange={handleProvinceChange}
                         options={countries.map((province) => ({
                           label: province,
@@ -222,7 +221,6 @@ export default function CartNewAddressForm({
                         }}
                         value={secondCity}
                         placeholder="請選擇"
-                        style={{ width: '100%' }}
                         onChange={onSecondCityChange}
                         options={cities.map((city) => ({
                           label: city,
